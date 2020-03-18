@@ -15,7 +15,9 @@ incdir = [include_directories('.')]
 
 diva_lib = static_library('diva', sources,
             dependencies : depends,
-			include_directories : incdir)
+			include_directories : incdir,
+            install: true,
+            install_dir: [true, true, true])
 
 diva_dep = declare_dependency(dependencies: depends, link_with: [diva_lib],
 			include_directories : incdir)

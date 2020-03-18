@@ -15,5 +15,5 @@ build() {
 
 package() {
     cd ../build
-	PREFIX=${pkgdir} ninja install
+	DESTDIR=${pkgdir} ninja install
 }
