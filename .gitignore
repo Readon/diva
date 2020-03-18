@@ -4,3 +4,5 @@ diva.vapi
 diva_test
 pkg
 build
+*.tar.xz
+.vscode
